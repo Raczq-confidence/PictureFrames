@@ -1,0 +1,26 @@
+$sidebar-width: 400px;
+
+.sidebar {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: calc($sidebar-width / 10);
+
+  .option {
+    width: calc($sidebar-width - 2 * $sidebar-width / 10);
+  }
+}
+
+.open {
+  width: $sidebar-width;
+}
+
+.close {
+  width: 0;
+}
