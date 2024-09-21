@@ -26,18 +26,5 @@ const items = [
 ];
 
 export const TopBar: React.FC = () => {
-  return (
-    <Menu
-      mode="horizontal"
-      style={{ display: "flex", justifyContent: "space-around" }}
-    >
-      {items.map((item) => (
-        <Tooltip title={item.label} key={item.key}>
-          <Menu.Item key={item.key} icon={item.icon}>
-            {item.label}
-          </Menu.Item>
-        </Tooltip>
-      ))}
-    </Menu>
-  );
+  return <Menu mode="horizontal" items={items} />;
 };
