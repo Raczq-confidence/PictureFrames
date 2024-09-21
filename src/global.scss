@@ -3,8 +3,21 @@
   padding: 0;
 }
 
-.container {
-  width: 100%;
+body {
   height: 100vh;
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #686de0;
+  border-radius: 100px;
 }
